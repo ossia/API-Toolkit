@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		46A4925419C2F38C003691A8 /* TlkCurve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TlkCurve.h; sourceTree = "<group>"; };
-		46A4925719C2F397003691A8 /* TlkCurve.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TlkCurve.cpp; sourceTree = "<group>"; };
 		46A4925819C2F3AA003691A8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -25,34 +23,16 @@
 		46A4925219C2F38C003691A8 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				46A4925319C2F38C003691A8 /* Editor */,
 			);
 			name = Headers;
 			path = ../../Headers;
 			sourceTree = "<group>";
 		};
-		46A4925319C2F38C003691A8 /* Editor */ = {
-			isa = PBXGroup;
-			children = (
-				46A4925419C2F38C003691A8 /* TlkCurve.h */,
-			);
-			path = Editor;
-			sourceTree = "<group>";
-		};
 		46A4925519C2F397003691A8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				46A4925619C2F397003691A8 /* Editor */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		46A4925619C2F397003691A8 /* Editor */ = {
-			isa = PBXGroup;
-			children = (
-				46A4925719C2F397003691A8 /* TlkCurve.cpp */,
-			);
-			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

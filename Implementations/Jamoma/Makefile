@@ -6,8 +6,8 @@ CC_64 = /usr/bin/clang++ -arch x86_64
 
 #########################################
 
-SRC32 = Sources/Editor/TlkCurve.i386.o
-SRC64 = Sources/Editor/TlkCurve.x64.o
+#SRC32 = Sources/xxxx.i386.o
+#SRC64 = Sources/xxxx.x64.o
 
 #########################################
 

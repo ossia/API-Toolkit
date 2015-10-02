@@ -1,4 +1,4 @@
 API-Toolkit
 ===========
 
-Ease the use of the API via a graphical interface
+Hight level features upon OSSIA API.
