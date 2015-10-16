@@ -1,29 +1,25 @@
 NAME = OSSIA-API-Toolkit
 SUFFIX = dylib
+API = ../../../i-score/API
 
 CC_32 = /usr/bin/clang++ -arch i386
 CC_64 = /usr/bin/clang++ -arch x86_64
 
 #########################################
 
-#SRC32 = Sources/xxxx.i386.o
-#SRC64 = Sources/xxxx.x64.o
+SRC32 = Sources/Load/Loader.i386.o
+SRC64 = Sources/Load/Loader.x64.o
 
 #########################################
 
 INCLUDES = -I../../Headers/
-INCLUDES += -I../../../API\ OSSIA/Headers # if the API OSSIA repo is in the same folder same API OSSIA Toolkit
-INCLUDES += -Isupport/includes/
+INCLUDES += -IIncludes/
+INCLUDES += -I$(API)/Headers
 INCLUDE_FILES := $(wildcard INCLUDES/*.h)
 
 #########################################
 
-
 LIBS = /usr/local/lib/OSSIA-API.dylib
-LIBS += ../../../API\ OSSIA/Implementations/Jamoma/support/lib/JamomaFoundation.dylib # if the API OSSIA repo is in the same folder same API OSSIA Toolkit
-LIBS += ../../../API\ OSSIA/Implementations/Jamoma/support/lib/JamomaDSP.dylib # if the API OSSIA repo is in the same folder same API OSSIA Toolkit
-LIBS += ../../../API\ OSSIA/Implementations/Jamoma/support/lib/JamomaModular.dylib # if the API OSSIA repo is in the same folder same API OSSIA Toolkit
-LIBS += ../../../API\ OSSIA/Implementations/Jamoma/support/lib/JamomaScore.dylib # if the API OSSIA repo is in the same folder same API OSSIA Toolkit
 LIBS += /System/Library/Frameworks/Carbon.framework/Versions/A/Carbon
 
 #########################################
@@ -81,12 +77,7 @@ lipo: | link
 	lipo build/$(NAME)-i386.dylib build/$(NAME)-x86_64.dylib -create -output build/$(NAME).dylib
 	lipo build/lib$(NAME)-i386.a build/lib$(NAME)-x86_64.a -create -output build/lib$(NAME).a
     
-	cp build/$(NAME).dylib /usr/local/lib # temporary for test with curve.cpp
-
-	install_name_tool -change @loader_path/../../../../support/JamomaFoundation.dylib @rpath/JamomaFoundation.dylib build/$(NAME).$(SUFFIX)
-	install_name_tool -change @loader_path/../../../../support/JamomaDSP.dylib @rpath/JamomaDSP.dylib build/$(NAME).$(SUFFIX)
-	install_name_tool -change @loader_path/../../../../support/JamomaModular.dylib @rpath/JamomaModular.dylib build/$(NAME).$(SUFFIX)
-	install_name_tool -change @loader_path/../../../../support/JamomaScore.dylib @rpath/JamomaScore.dylib build/$(NAME).$(SUFFIX)
+	cp build/$(NAME).dylib /usr/local/lib # useful to run Documentation/Examples projects
 
 clean:
 	rm -f $(SRC32) $(SRC64)

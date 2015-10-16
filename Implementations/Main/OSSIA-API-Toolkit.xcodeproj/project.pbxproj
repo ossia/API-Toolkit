@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		461EAC581BD1319400D7C4DB /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		461EAC591BD1319400D7C4DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		461EAC5B1BD1319400D7C4DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		461EAC5E1BD131A300D7C4DB /* MainLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainLoader.h; sourceTree = "<group>"; };
+		461EAC601BD131A300D7C4DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		461EAC631BD131AA00D7C4DB /* Loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Loader.cpp; sourceTree = "<group>"; };
+		461EAC651BD131AA00D7C4DB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		461EAC681BD1326100D7C4DB /* Automation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Automation.h; sourceTree = "<group>"; };
+		461EAC691BD1326100D7C4DB /* Clock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		461EAC6A1BD1326100D7C4DB /* Curve.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Curve.h; sourceTree = "<group>"; };
+		461EAC6C1BD1326100D7C4DB /* CurveSegmentLinear.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurveSegmentLinear.h; sourceTree = "<group>"; };
+		461EAC6D1BD1326100D7C4DB /* CurveSegmentPower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurveSegmentPower.h; sourceTree = "<group>"; };
+		461EAC6E1BD1326100D7C4DB /* CurveSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurveSegment.h; sourceTree = "<group>"; };
+		461EAC6F1BD1326100D7C4DB /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		461EAC701BD1326100D7C4DB /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
+		461EAC711BD1326100D7C4DB /* ExpressionAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionAtom.h; sourceTree = "<group>"; };
+		461EAC721BD1326100D7C4DB /* ExpressionComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionComposition.h; sourceTree = "<group>"; };
+		461EAC731BD1326100D7C4DB /* ExpressionNot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpressionNot.h; sourceTree = "<group>"; };
+		461EAC741BD1326100D7C4DB /* Loop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loop.h; sourceTree = "<group>"; };
+		461EAC751BD1326100D7C4DB /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		461EAC761BD1326100D7C4DB /* Scenario.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenario.h; sourceTree = "<group>"; };
+		461EAC771BD1326100D7C4DB /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		461EAC781BD1326100D7C4DB /* StateElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StateElement.h; sourceTree = "<group>"; };
+		461EAC791BD1326100D7C4DB /* TimeConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeConstraint.h; sourceTree = "<group>"; };
+		461EAC7A1BD1326100D7C4DB /* TimeConstraint.h.orig */ = {isa = PBXFileReference; lastKnownFileType = text; path = TimeConstraint.h.orig; sourceTree = "<group>"; };
+		461EAC7B1BD1326100D7C4DB /* TimeEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeEvent.h; sourceTree = "<group>"; };
+		461EAC7C1BD1326100D7C4DB /* TimeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeNode.h; sourceTree = "<group>"; };
+		461EAC7D1BD1326100D7C4DB /* TimeProcess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeProcess.h; sourceTree = "<group>"; };
+		461EAC7E1BD1326100D7C4DB /* TimeValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimeValue.h; sourceTree = "<group>"; };
+		461EAC7F1BD1326100D7C4DB /* Value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Value.h; sourceTree = "<group>"; };
+		461EAC811BD1326100D7C4DB /* CallbackContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallbackContainer.h; sourceTree = "<group>"; };
+		461EAC821BD1326100D7C4DB /* Container.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Container.h; sourceTree = "<group>"; };
+		461EAC841BD1326100D7C4DB /* Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		461EAC851BD1326100D7C4DB /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		461EAC861BD1326100D7C4DB /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		461EAC881BD1326100D7C4DB /* Local.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Local.h; sourceTree = "<group>"; };
+		461EAC891BD1326100D7C4DB /* MIDI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDI.h; sourceTree = "<group>"; };
+		461EAC8A1BD1326100D7C4DB /* Minuit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Minuit.h; sourceTree = "<group>"; };
+		461EAC8B1BD1326100D7C4DB /* OSC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSC.h; sourceTree = "<group>"; };
+		461EAC8C1BD1326100D7C4DB /* Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol.h; sourceTree = "<group>"; };
+		46A4925819C2F3AA003691A8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		461EAC561BD1319400D7C4DB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC571BD1319400D7C4DB /* Load */,
+				461EAC5A1BD1319400D7C4DB /* Units */,
+			);
+			name = Headers;
+			path = ../../Headers;
+			sourceTree = "<group>";
+		};
+		461EAC571BD1319400D7C4DB /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC591BD1319400D7C4DB /* README.md */,
+				461EAC581BD1319400D7C4DB /* Loader.h */,
+			);
+			path = Load;
+			sourceTree = "<group>";
+		};
+		461EAC5A1BD1319400D7C4DB /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC5B1BD1319400D7C4DB /* README.md */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		461EAC5C1BD131A300D7C4DB /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC5D1BD131A300D7C4DB /* Load */,
+				461EAC5F1BD131A300D7C4DB /* Units */,
+			);
+			path = Includes;
+			sourceTree = "<group>";
+		};
+		461EAC5D1BD131A300D7C4DB /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC5E1BD131A300D7C4DB /* MainLoader.h */,
+			);
+			path = Load;
+			sourceTree = "<group>";
+		};
+		461EAC5F1BD131A300D7C4DB /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC601BD131A300D7C4DB /* README.md */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		461EAC611BD131AA00D7C4DB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC621BD131AA00D7C4DB /* Load */,
+				461EAC641BD131AA00D7C4DB /* Units */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		461EAC621BD131AA00D7C4DB /* Load */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC631BD131AA00D7C4DB /* Loader.cpp */,
+			);
+			path = Load;
+			sourceTree = "<group>";
+		};
+		461EAC641BD131AA00D7C4DB /* Units */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC651BD131AA00D7C4DB /* README.md */,
+			);
+			path = Units;
+			sourceTree = "<group>";
+		};
+		461EAC661BD1326100D7C4DB /* OSSIA API */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC671BD1326100D7C4DB /* Editor */,
+				461EAC801BD1326100D7C4DB /* Misc */,
+				461EAC831BD1326100D7C4DB /* Network */,
+			);
+			name = "OSSIA API";
+			path = "../../../i-score/API/Headers";
+			sourceTree = "<group>";
+		};
+		461EAC671BD1326100D7C4DB /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC681BD1326100D7C4DB /* Automation.h */,
+				461EAC691BD1326100D7C4DB /* Clock.h */,
+				461EAC6A1BD1326100D7C4DB /* Curve.h */,
+				461EAC6B1BD1326100D7C4DB /* CurveSegment */,
+				461EAC6E1BD1326100D7C4DB /* CurveSegment.h */,
+				461EAC6F1BD1326100D7C4DB /* Domain.h */,
+				461EAC701BD1326100D7C4DB /* Expression.h */,
+				461EAC711BD1326100D7C4DB /* ExpressionAtom.h */,
+				461EAC721BD1326100D7C4DB /* ExpressionComposition.h */,
+				461EAC731BD1326100D7C4DB /* ExpressionNot.h */,
+				461EAC741BD1326100D7C4DB /* Loop.h */,
+				461EAC751BD1326100D7C4DB /* Message.h */,
+				461EAC761BD1326100D7C4DB /* Scenario.h */,
+				461EAC771BD1326100D7C4DB /* State.h */,
+				461EAC781BD1326100D7C4DB /* StateElement.h */,
+				461EAC791BD1326100D7C4DB /* TimeConstraint.h */,
+				461EAC7A1BD1326100D7C4DB /* TimeConstraint.h.orig */,
+				461EAC7B1BD1326100D7C4DB /* TimeEvent.h */,
+				461EAC7C1BD1326100D7C4DB /* TimeNode.h */,
+				461EAC7D1BD1326100D7C4DB /* TimeProcess.h */,
+				461EAC7E1BD1326100D7C4DB /* TimeValue.h */,
+				461EAC7F1BD1326100D7C4DB /* Value.h */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		461EAC6B1BD1326100D7C4DB /* CurveSegment */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC6C1BD1326100D7C4DB /* CurveSegmentLinear.h */,
+				461EAC6D1BD1326100D7C4DB /* CurveSegmentPower.h */,
+			);
+			path = CurveSegment;
+			sourceTree = "<group>";
+		};
+		461EAC801BD1326100D7C4DB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC811BD1326100D7C4DB /* CallbackContainer.h */,
+				461EAC821BD1326100D7C4DB /* Container.h */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		461EAC831BD1326100D7C4DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC841BD1326100D7C4DB /* Address.h */,
+				461EAC851BD1326100D7C4DB /* Device.h */,
+				461EAC861BD1326100D7C4DB /* Node.h */,
+				461EAC871BD1326100D7C4DB /* Protocol */,
+				461EAC8C1BD1326100D7C4DB /* Protocol.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		461EAC871BD1326100D7C4DB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				461EAC881BD1326100D7C4DB /* Local.h */,
+				461EAC891BD1326100D7C4DB /* MIDI.h */,
+				461EAC8A1BD1326100D7C4DB /* Minuit.h */,
+				461EAC8B1BD1326100D7C4DB /* OSC.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		46A4924719C2F284003691A8 = {
+			isa = PBXGroup;
+			children = (
+				46A4925819C2F3AA003691A8 /* Makefile */,
+				461EAC661BD1326100D7C4DB /* OSSIA API */,
+				461EAC561BD1319400D7C4DB /* Headers */,
+				461EAC5C1BD131A300D7C4DB /* Includes */,
+				461EAC611BD131AA00D7C4DB /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		46A4924C19C2F284003691A8 /* OSSIA-API-Toolkit */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) $(Configuration)";
+			buildConfigurationList = 46A4924F19C2F284003691A8 /* Build configuration list for PBXLegacyTarget "OSSIA-API-Toolkit" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = "OSSIA-API-Toolkit";
+			passBuildSettingsInEnvironment = 1;
+			productName = "OSSIA-API-Toolkit";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		46A4924819C2F284003691A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = OSSIA;
+			};
+			buildConfigurationList = 46A4924B19C2F284003691A8 /* Build configuration list for PBXProject "OSSIA-API-Toolkit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 46A4924719C2F284003691A8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46A4924C19C2F284003691A8 /* OSSIA-API-Toolkit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		46A4924D19C2F284003691A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		46A4924E19C2F284003691A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		46A4925019C2F284003691A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46A4925119C2F284003691A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46A4924B19C2F284003691A8 /* Build configuration list for PBXProject "OSSIA-API-Toolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A4924D19C2F284003691A8 /* Debug */,
+				46A4924E19C2F284003691A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46A4924F19C2F284003691A8 /* Build configuration list for PBXLegacyTarget "OSSIA-API-Toolkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46A4925019C2F284003691A8 /* Debug */,
+				46A4925119C2F284003691A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46A4924819C2F284003691A8 /* Project object */;
+}
