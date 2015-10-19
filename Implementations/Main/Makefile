@@ -7,8 +7,12 @@ CC_64 = /usr/bin/clang++ -arch x86_64
 
 #########################################
 
-SRC32 = Sources/Load/Loader.i386.o
-SRC64 = Sources/Load/Loader.x64.o
+SRC32 = Sources/Setup/Network.i386.o
+SRC64 += Sources/Setup/Network.x64.o
+SRC32 += Sources/Setup/Project.i386.o
+SRC64 += Sources/Setup/Project.x64.o
+SRC32 += Sources/Setup/Score.i386.o
+SRC64 += Sources/Setup/Score.x64.o
 
 #########################################
 

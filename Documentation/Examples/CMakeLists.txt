@@ -7,4 +7,4 @@ function(addAPIToolkitExample TESTNAME TESTSRCS)
         endif()
 endFunction()
 
-addAPIToolkitExample(load_loader			"${CMAKE_CURRENT_SOURCE_DIR}/Load/loader.cpp")
+addAPIToolkitExample(load_setup			"${CMAKE_CURRENT_SOURCE_DIR}/Setup/load_setup.cpp")

@@ -1,9 +1,9 @@
 /*!
- * \file Loader.h
+ * \file Network.h
  *
- * \defgroup Load
+ * \defgroup Setup
  *
- * \brief Ease the loading of a Network setup or/and an Editor project.
+ * \brief Ease the management of a Network setup
  *
  * \details
  *
@@ -23,7 +23,7 @@ namespace OSSIA
 namespace Toolkit
 {
 
-class Loader
+class Network
 {
 
 public:
@@ -32,19 +32,19 @@ public:
 # pragma mark Life cycle
 
   /*! factory
-   \return a new loader */
-  static std::shared_ptr<Loader> create();
+   \return a new Network */
+  static std::shared_ptr<Network> create();
 
   /*! destructor */
-  virtual ~Loader() = default;
+  virtual ~Network() = default;
 
 # pragma mark -
 # pragma mark Loading
 
-  /*! load OSSIA objects from a file
-   \param the file to load
+  /*! load OSSIA Network objects from a json string
+   \param json string
    \return true if the loading succeeded */
-  virtual bool load(std::string) = 0;
+  virtual bool load(const std::string&) = 0;
 
 # pragma mark -
 # pragma mark Accessors

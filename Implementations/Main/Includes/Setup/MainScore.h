@@ -1,5 +1,5 @@
 /*!
- * \file MainLoader.h
+ * \file MainScore.h
  *
  * \brief
  *
@@ -13,12 +13,7 @@
 
 #pragma once
 
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <streambuf>
-
-#include "Load/Loader.h"
+#include "Setup/Score.h"
 
 #include "rapidjson/document.h"
 
@@ -27,7 +22,7 @@ using namespace OSSIA::Toolkit;
 using namespace std;
 using namespace rapidjson;
 
-class MainLoader : public Loader
+class MainScore : public Score
 {
   
 private:
@@ -42,14 +37,14 @@ public:
 # pragma mark -
 # pragma mark Life cycle
   
-  MainLoader();
+  MainScore();
   
-  ~MainLoader();
+  ~MainScore();
 
 # pragma mark -
 # pragma mark Loading
 
-  bool load(string) override;
+  bool load(const string&) override;
   
 # pragma mark -
 # pragma mark Accessors

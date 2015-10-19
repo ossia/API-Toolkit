@@ -8,11 +8,8 @@
 
 /* Begin PBXFileReference section */
 		465FA9901BD4F5B400E4E518 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		465FA9931BD4F5C100E4E518 /* Loader.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
 		465FA9961BD4F5C100E4E518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		465FA9991BD4F5C800E4E518 /* MainLoader.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MainLoader.h; sourceTree = "<group>"; };
 		465FA99B1BD4F5C800E4E518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		465FA99E1BD4F5CD00E4E518 /* Loader.cpp */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Loader.cpp; sourceTree = "<group>"; };
 		465FA9A21BD4F5CD00E4E518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		465FA9A51BD4F5D700E4E518 /* Automation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Automation.h; sourceTree = "<group>"; };
 		465FA9A61BD4F5D700E4E518 /* Clock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
@@ -132,6 +129,15 @@
 		465FAA731BD4F68700E4E518 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
 		465FAA741BD4F68700E4E518 /* stringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
 		465FAA751BD4F68700E4E518 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		465FAAB41BD537E200E4E518 /* MainNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNetwork.h; sourceTree = "<group>"; };
+		465FAAB51BD537E200E4E518 /* MainScore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScore.h; sourceTree = "<group>"; };
+		465FAAB71BD537E900E4E518 /* Network.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
+		465FAAB81BD537E900E4E518 /* Score.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Score.cpp; sourceTree = "<group>"; };
+		465FAABA1BD537F300E4E518 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		465FAABB1BD537F300E4E518 /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		465FAABE1BD53B3000E4E518 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		465FAABF1BD53C1500E4E518 /* MainProject.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MainProject.h; sourceTree = "<group>"; };
+		465FAAC01BD53C2500E4E518 /* Project.cpp */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Project.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -150,19 +156,11 @@
 		465FA9911BD4F5C100E4E518 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				465FA9921BD4F5C100E4E518 /* Load */,
+				465FAAB91BD537F300E4E518 /* Setup */,
 				465FA9951BD4F5C100E4E518 /* Units */,
 			);
 			name = Headers;
 			path = ../../Headers;
-			sourceTree = "<group>";
-		};
-		465FA9921BD4F5C100E4E518 /* Load */ = {
-			isa = PBXGroup;
-			children = (
-				465FA9931BD4F5C100E4E518 /* Loader.h */,
-			);
-			path = Load;
 			sourceTree = "<group>";
 		};
 		465FA9951BD4F5C100E4E518 /* Units */ = {
@@ -176,18 +174,10 @@
 		465FA9971BD4F5C800E4E518 /* Includes */ = {
 			isa = PBXGroup;
 			children = (
-				465FA9981BD4F5C800E4E518 /* Load */,
+				465FAAB31BD537E200E4E518 /* Setup */,
 				465FA99A1BD4F5C800E4E518 /* Units */,
 			);
 			path = Includes;
-			sourceTree = "<group>";
-		};
-		465FA9981BD4F5C800E4E518 /* Load */ = {
-			isa = PBXGroup;
-			children = (
-				465FA9991BD4F5C800E4E518 /* MainLoader.h */,
-			);
-			path = Load;
 			sourceTree = "<group>";
 		};
 		465FA99A1BD4F5C800E4E518 /* Units */ = {
@@ -201,18 +191,10 @@
 		465FA99C1BD4F5CD00E4E518 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				465FA99D1BD4F5CD00E4E518 /* Load */,
+				465FAAB61BD537E900E4E518 /* Setup */,
 				465FA9A11BD4F5CD00E4E518 /* Units */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		465FA99D1BD4F5CD00E4E518 /* Load */ = {
-			isa = PBXGroup;
-			children = (
-				465FA99E1BD4F5CD00E4E518 /* Loader.cpp */,
-			);
-			path = Load;
 			sourceTree = "<group>";
 		};
 		465FA9A11BD4F5CD00E4E518 /* Units */ = {
@@ -562,6 +544,36 @@
 				465FAA701BD4F68700E4E518 /* stdint.h */,
 			);
 			path = msinttypes;
+			sourceTree = "<group>";
+		};
+		465FAAB31BD537E200E4E518 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				465FAAB41BD537E200E4E518 /* MainNetwork.h */,
+				465FAABF1BD53C1500E4E518 /* MainProject.h */,
+				465FAAB51BD537E200E4E518 /* MainScore.h */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		465FAAB61BD537E900E4E518 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				465FAAB71BD537E900E4E518 /* Network.cpp */,
+				465FAAC01BD53C2500E4E518 /* Project.cpp */,
+				465FAAB81BD537E900E4E518 /* Score.cpp */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		465FAAB91BD537F300E4E518 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				465FAABA1BD537F300E4E518 /* Network.h */,
+				465FAABE1BD53B3000E4E518 /* Project.h */,
+				465FAABB1BD537F300E4E518 /* Score.h */,
+			);
+			path = Setup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
