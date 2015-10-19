@@ -13,11 +13,19 @@
 
 #pragma once
 
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <streambuf>
+
 #include "Load/Loader.h"
+
+#include "rapidjson/document.h"
 
 using namespace OSSIA;
 using namespace OSSIA::Toolkit;
 using namespace std;
+using namespace rapidjson;
 
 class MainLoader : public Loader
 {
@@ -26,6 +34,8 @@ private:
   
 # pragma mark -
 # pragma mark Implementation specific
+    
+  Document mDocument;
   
 public:
   

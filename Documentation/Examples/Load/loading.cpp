@@ -19,4 +19,5 @@ using namespace std;
 int main()
 {
   auto myLoader = Loader::create();
+  myLoader->load("/Users/WALL-E/Documents/Developpements/OSSIA/APIToolkit/Documentation/Examples/Load/example.scorejson");
 }

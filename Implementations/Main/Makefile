@@ -1,4 +1,4 @@
-NAME = OSSIA-API-Toolkit
+NAME = OSSIA-APIToolkit
 SUFFIX = dylib
 API = ../../../i-score/API
 
@@ -15,6 +15,7 @@ SRC64 = Sources/Load/Loader.x64.o
 INCLUDES = -I../../Headers/
 INCLUDES += -IIncludes/
 INCLUDES += -I$(API)/Headers
+INCLUDES += -I3rdparty/rapidjson/include
 INCLUDE_FILES := $(wildcard INCLUDES/*.h)
 
 #########################################
