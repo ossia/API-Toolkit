@@ -32,6 +32,8 @@ private:
     
   Document mDocument;
   
+  Container<Device> mDevices;
+  
 public:
   
 # pragma mark -
@@ -48,10 +50,16 @@ public:
   
 # pragma mark -
 # pragma mark Accessors
+
+  const Container<Device> getDevices() override;
   
 private:
   
 # pragma mark -
 # pragma mark Implementation specific
-
+  
+  shared_ptr<Device> load_device(const rapidjson::Value&);
+  void load_node(const rapidjson::Value&, shared_ptr<Node>);
+  void load_address(const rapidjson::Value&, shared_ptr<Node>);
+  OSSIA::Value* load_value(const rapidjson::Value&);
 };

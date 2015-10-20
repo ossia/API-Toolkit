@@ -18,6 +18,9 @@
 #include <memory>
 #include <string>
 
+#include "Network/Device.h"
+#include "Misc/Container.h"
+
 namespace OSSIA
 {
 namespace Toolkit
@@ -48,6 +51,10 @@ public:
 
 # pragma mark -
 # pragma mark Accessors
+  
+  /*! get all devices
+   \return #Container<#Device> */
+  virtual const Container<Device> getDevices() = 0;
 
 };
 }

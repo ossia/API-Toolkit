@@ -23,7 +23,7 @@ MainScore::~MainScore()
 {}
 
 # pragma mark -
-# pragma mark Execution
+# pragma mark Loading
 
 bool MainScore::load(const string& json)
 {

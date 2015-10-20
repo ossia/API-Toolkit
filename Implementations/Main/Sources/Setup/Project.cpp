@@ -16,14 +16,16 @@ namespace Toolkit
 }
 }
 
-MainProject::MainProject()
+MainProject::MainProject() :
+mNetwork(Network::create()),
+mScore(Score::create())
 {}
 
 MainProject::~MainProject()
 {}
 
 # pragma mark -
-# pragma mark Execution
+# pragma mark Loading
 
 bool MainProject::load(const string& json)
 {
@@ -38,7 +40,7 @@ bool MainProject::load(const string& json)
     return false;
   
   // get json string network setup
-  Value& network = mDocument["Plugins"];
+  rapidjson::Value& network = mDocument["Plugins"];
   if (network.IsObject())
   {
     StringBuffer buffer;
@@ -50,7 +52,7 @@ bool MainProject::load(const string& json)
   }
   
   // get json string score setup
-  Value& score = mDocument["Document"];
+  rapidjson::Value& score = mDocument["Document"];
   if (score.IsObject())
   {
     StringBuffer buffer;
@@ -59,11 +61,6 @@ bool MainProject::load(const string& json)
     
     mScore = Score::create();
     mScore->load(buffer.GetString());
-  
-    //! \debug
-    cout << "DocumentId : " << score["DocumentId"].GetInt() << endl;
-    cout << "ObjectName : " << score["ObjectName"].GetString() << endl;
-    cout << "id : " << score["id"].GetInt() << endl;
   }
   
   return true;

@@ -55,7 +55,7 @@ public:
   
 # pragma mark -
 # pragma mark Accessors
-    
+
   std::shared_ptr<Network> getNetwork() override;
   
   std::shared_ptr<Score> getScore() override;
