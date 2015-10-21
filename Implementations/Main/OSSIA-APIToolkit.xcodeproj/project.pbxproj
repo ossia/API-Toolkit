@@ -134,9 +134,9 @@
 		465FAA741BD4F68700E4E518 /* stringbuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
 		465FAA751BD4F68700E4E518 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 		465FAAB41BD537E200E4E518 /* MainNetwork.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MainNetwork.h; sourceTree = "<group>"; };
-		465FAAB51BD537E200E4E518 /* MainScore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainScore.h; sourceTree = "<group>"; };
+		465FAAB51BD537E200E4E518 /* MainScore.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MainScore.h; sourceTree = "<group>"; };
 		465FAAB71BD537E900E4E518 /* Network.cpp */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Network.cpp; sourceTree = "<group>"; };
-		465FAAB81BD537E900E4E518 /* Score.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Score.cpp; sourceTree = "<group>"; };
+		465FAAB81BD537E900E4E518 /* Score.cpp */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Score.cpp; sourceTree = "<group>"; };
 		465FAABA1BD537F300E4E518 /* Network.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		465FAABB1BD537F300E4E518 /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
 		465FAABE1BD53B3000E4E518 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
