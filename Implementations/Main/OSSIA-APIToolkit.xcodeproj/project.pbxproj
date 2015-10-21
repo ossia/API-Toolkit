@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		4623D5471BD7DD8700339C33 /* ForwardDeclaration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForwardDeclaration.h; sourceTree = "<group>"; };
+		4623D5491BD7DD8700339C33 /* ProjectTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectTest.cpp; sourceTree = "<group>"; };
+		4623D54A1BD7DE1D00339C33 /* NetworkTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NetworkTest.cpp; sourceTree = "<group>"; };
+		4623D54B1BD7DE2400339C33 /* ScoreTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ScoreTest.cpp; sourceTree = "<group>"; };
 		465FA9901BD4F5B400E4E518 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		465FA9961BD4F5C100E4E518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		465FA99B1BD4F5C800E4E518 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -141,6 +145,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		4623D5451BD7DD8700339C33 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4623D5471BD7DD8700339C33 /* ForwardDeclaration.h */,
+				4623D5481BD7DD8700339C33 /* Setup */,
+			);
+			name = Tests;
+			path = ../../Tests;
+			sourceTree = "<group>";
+		};
+		4623D5481BD7DD8700339C33 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				4623D54A1BD7DE1D00339C33 /* NetworkTest.cpp */,
+				4623D5491BD7DD8700339C33 /* ProjectTest.cpp */,
+				4623D54B1BD7DE2400339C33 /* ScoreTest.cpp */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
 		465FA5951BD4F50300E4E518 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +173,7 @@
 				465FA9911BD4F5C100E4E518 /* Headers */,
 				465FA9971BD4F5C800E4E518 /* Includes */,
 				465FA99C1BD4F5CD00E4E518 /* Sources */,
+				4623D5451BD7DD8700339C33 /* Tests */,
 				465FA9CA1BD4F68600E4E518 /* 3rdparty */,
 			);
 			sourceTree = "<group>";
