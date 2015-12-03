@@ -36,7 +36,7 @@ public:
     static std::shared_ptr<Project> create();
             
     /*! destructor */
-    virtual ~Project() = default;
+    virtual ~Project();
             
 # pragma mark -
 # pragma mark Loading

@@ -39,7 +39,7 @@ public:
   static std::shared_ptr<Network> create();
 
   /*! destructor */
-  virtual ~Network() = default;
+  virtual ~Network();
 
 # pragma mark -
 # pragma mark Loading

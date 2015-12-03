@@ -7,7 +7,9 @@ CC_64 = /usr/bin/clang++ -arch x86_64
 
 #########################################
 
-SRC32 = Sources/Setup/Network.i386.o
+SRC32 = Sources/Debug/Printer.i386.o
+SRC64 += Sources/Debug/Printer.x64.o
+SRC32 += Sources/Setup/Network.i386.o
 SRC64 += Sources/Setup/Network.x64.o
 SRC32 += Sources/Setup/Project.i386.o
 SRC64 += Sources/Setup/Project.x64.o

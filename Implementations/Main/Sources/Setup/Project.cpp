@@ -24,6 +24,9 @@ mScore(Score::create())
 MainProject::~MainProject()
 {}
 
+Project::~Project()
+{}
+
 # pragma mark -
 # pragma mark Loading
 

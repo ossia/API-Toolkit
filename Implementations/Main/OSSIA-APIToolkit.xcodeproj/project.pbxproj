@@ -142,6 +142,10 @@
 		465FAABE1BD53B3000E4E518 /* Project.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
 		465FAABF1BD53C1500E4E518 /* MainProject.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = MainProject.h; sourceTree = "<group>"; };
 		465FAAC01BD53C2500E4E518 /* Project.cpp */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Project.cpp; sourceTree = "<group>"; };
+		46C3437C1C1090C500A7E629 /* Printer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		46C3437E1C1090D400A7E629 /* MainPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPrinter.h; sourceTree = "<group>"; };
+		46C343801C1090DD00A7E629 /* Printer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Printer.cpp; sourceTree = "<group>"; };
+		46C343821C10932300A7E629 /* PrinterTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PrinterTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				4623D5471BD7DD8700339C33 /* ForwardDeclaration.h */,
+				46C343811C10932300A7E629 /* Debug */,
 				4623D5481BD7DD8700339C33 /* Setup */,
 			);
 			name = Tests;
@@ -181,6 +186,7 @@
 		465FA9911BD4F5C100E4E518 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				46C3437B1C1090C500A7E629 /* Debug */,
 				465FAAB91BD537F300E4E518 /* Setup */,
 				465FA9951BD4F5C100E4E518 /* Units */,
 			);
@@ -199,6 +205,7 @@
 		465FA9971BD4F5C800E4E518 /* Includes */ = {
 			isa = PBXGroup;
 			children = (
+				46C3437D1C1090D400A7E629 /* Debug */,
 				465FAAB31BD537E200E4E518 /* Setup */,
 				465FA99A1BD4F5C800E4E518 /* Units */,
 			);
@@ -216,6 +223,7 @@
 		465FA99C1BD4F5CD00E4E518 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				46C3437F1C1090DD00A7E629 /* Debug */,
 				465FAAB61BD537E900E4E518 /* Setup */,
 				465FA9A11BD4F5CD00E4E518 /* Units */,
 			);
@@ -599,6 +607,40 @@
 				465FAABB1BD537F300E4E518 /* Score.h */,
 			);
 			path = Setup;
+			sourceTree = "<group>";
+		};
+		46C3437B1C1090C500A7E629 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				46C3437C1C1090C500A7E629 /* Printer.h */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		46C3437D1C1090D400A7E629 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				46C3437E1C1090D400A7E629 /* MainPrinter.h */,
+			);
+			name = Debug;
+			path = Includes/Debug;
+			sourceTree = SOURCE_ROOT;
+		};
+		46C3437F1C1090DD00A7E629 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				46C343801C1090DD00A7E629 /* Printer.cpp */,
+			);
+			name = Debug;
+			path = Sources/Debug;
+			sourceTree = SOURCE_ROOT;
+		};
+		46C343811C10932300A7E629 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				46C343821C10932300A7E629 /* PrinterTest.cpp */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -26,6 +26,9 @@ MainNetwork::MainNetwork()
 MainNetwork::~MainNetwork()
 {}
 
+Network::~Network()
+{}
+
 # pragma mark -
 # pragma mark Loading
 

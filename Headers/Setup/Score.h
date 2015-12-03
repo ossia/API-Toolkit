@@ -36,7 +36,7 @@ public:
     static std::shared_ptr<Score> create();
             
     /*! destructor */
-    virtual ~Score() = default;
+    virtual ~Score();
             
 # pragma mark -
 # pragma mark Loading

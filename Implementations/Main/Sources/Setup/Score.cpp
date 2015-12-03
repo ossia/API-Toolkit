@@ -22,6 +22,9 @@ MainScore::MainScore()
 MainScore::~MainScore()
 {}
 
+Score::~Score()
+{}
+
 # pragma mark -
 # pragma mark Loading
 
