@@ -3,13 +3,18 @@
 *.o
 *.i386.o-*
 *.x64.o-*
+*.dylib
+
+# QtCreator files
+*.txt.user.*
 
 # Eclipse files
 .cproject
 .project
 .settings*
-/Debug
-/Clang
+/build*
+*.user
+Makefile
 
 # XCode files
 build
