@@ -19,7 +19,8 @@ function(addAPIToolkitQtTest TESTNAME TESTSRCS)
         add_test(NAME Main_target_${TESTNAME} COMMAND Main_${TESTNAME})
     endif()
 endFunction()
-
+                     
+addAPIToolkitQtTest(APIPrinterTest              "${CMAKE_CURRENT_SOURCE_DIR}/Debug/PrinterTest.cpp") 
 addAPIToolkitQtTest(APIProjectTest              "${CMAKE_CURRENT_SOURCE_DIR}/Setup/ProjectTest.cpp")
 addAPIToolkitQtTest(APINetworkTest              "${CMAKE_CURRENT_SOURCE_DIR}/Setup/NetworkTest.cpp")
 addAPIToolkitQtTest(APIScoreTest              "${CMAKE_CURRENT_SOURCE_DIR}/Setup/ScoreTest.cpp")
